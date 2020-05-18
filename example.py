@@ -1,18 +1,3 @@
-# odbcinst
-
-return output from unixODBC `odbcinst` command
-
-### Installation
-
-```
-pip install odbcinst
-```
-### Usage
-
-The `.j()` function executes `odbcinst -j`. If called with no argument it
-returns a dict. If called with a str argument it returns the specified value.
-
-```python
 from pprint import pprint
 
 import odbcinst
@@ -31,4 +16,3 @@ pprint(odbcinst.j())
 
 print(repr(odbcinst.j("unixODBC")))
 # '2.3.4'
-```
