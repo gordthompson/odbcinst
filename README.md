@@ -32,3 +32,15 @@ pprint(odbcinst.j())
 print(repr(odbcinst.j("unixODBC")))
 # '2.3.4'
 ```
+
+If unixODBC is not installed then the results are
+
+```python
+pprint(odbcinst.j())
+"""console output:
+{'unixODBC': None}
+"""
+
+print(repr(odbcinst.j("SYSTEM DATA SOURCES")))
+# None
+```
